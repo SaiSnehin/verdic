@@ -1,0 +1,84 @@
+
+pwd command (Print Working Directory) ----- prints the current directory
+Cd command ------- used ton change the directory
+cd ~ -------- goes to home directory
+cd .. --------- goes to parent directory
+cd -  --------- goes to previous directory
+Cd /etc/profile.d ---------- absolute path
+ su ----------- switch user
+ls ----- lists all the files
+ls -a ---- lists everything including the hidden files
+Ls -l ------ shows even the permissions
+Ls lh -------- shows all file sizes
+Mkdir --------------- Creating directories
+Rmdir ---------- remove directory
+Pushd-- inserting a directory
+Popd -- removing a directory
+File -- used for determining the file type
+Touch -- used to create an empty file
+Touch -t -- changing the time stamp or date creation time of a file
+ rm ------------------- Removes a file forever
+ rm -i ----------------- To prevent yourself from accidentally removing 
+a file
+ rm -r ---------------- will not remove non empty directories 
+ cp -------------------- To copy a file, use cp with a source and a 
+target argument
+ cp -r ----------------- To copy complete directories
+ cp -R ---------------- creates a new folder if not exists
+ cp - i. ---------------- To prevent from overwriting of files 
+(i--interactive)
+ mv ------------------- moving directory or renaming
+ tar ----------------- for achieving files but size will be same
+ gzip --------------- creating a zip file with compressed file size
+ grep -------------- shows the lines in a file that matches the pattern
+ |     ---------------- output of one command is input to another 
+command
+ WORKING WITH FILE CONTENTS
+ 
+ head -------- to display first 10 lines of a file
+ tail ----------- to display last 10 lines of a file
+ cat ----------- concatenation, create files, create an custom ending 
+cat > winter.txt
+ 
+  BINARY DIRECTORIES
+
+ ls /bin -------- lists the binary directories
+ ls/sbin -------- lists the OS directories
+  
+CONFIGURATION DIRECORIES
+
+ /etc -------- All of the machine-specific configuration files should be 
+located in /etc
+ /dev ------- files regarding hardware
+ /usr -------- unix system resources
+ 
+SHELL
+
+ " " and ' ' ----- includes the white space
+ alias        ------ example clear can be aliased as c
+ #             ------- shell comment
+ quotes
+ GLOBBING
+
+  ls [Ww]eather --------- finds the file which starts with w or W
+  ?                        ---------- stands for a single character
+
+SHELL SCRIPTING
+
+ #!/bin/bash ------- shebang tells bash what scripting language is being 
+used
+
+ USERS
+
+ sudo groupadd veridic
+ sudo useradd -G 1002 -m -c "ellimishetty" ellimishetty -------- -m is 
+used to create a home directory and c is for comment
+
+ sudo passwd ellimishetty --------- for changing password of a user
+
+Permissions
+4- Read
+2- Write
+1- execute permission
+0- no permission 
+
