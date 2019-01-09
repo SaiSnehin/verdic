@@ -1,0 +1,29 @@
+A-Z linux commands
+
+
+Letter A - Alias
+Letter B - bind
+Letter C - cd
+Letter D - df -h
+Letter E - env
+Letter F - find
+Letter G - grep pattern files 
+Letter H - head
+Letter I - info
+Letter J - jobs
+Letter K - kill pid
+Letter L - lsblk
+Letter M - mount
+Letter N - nano
+Letter O - open
+Letter P - pwd
+Letter Q - q
+Letter R - rm -rf Directory Name
+Letter S - sudo
+Letter T - telnet Hostname
+Letter U - uptime 
+Letter V - vi/vim
+Letter W - wget Filename
+Letter X - xz
+Letter Y - yacc
+Letter Z - Zip file.zip file1 file2
