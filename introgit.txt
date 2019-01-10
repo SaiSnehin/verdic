@@ -1,0 +1,58 @@
+ git init ------------  for creating a repository
+ 
+git clone /c/Users/snehi/Documents/git/central.git/ test00 ---- creating non bare repository
+git add 1.java(filename) ------------- move the file into stagging area
+git commit -m "first checkin" ------- used to commit and m is for message or comment, and also it shows nothing to commit initially because there are no changes and difference between working dir and 
+repo is nothing
+
+ git log --------- will give all the commit id's in your repository inorder of latest to oldest
+ git add . ------- used to add all changes to stagging area
+ 
+ git config --bool core.bare true --------------- should be typed in a new terminal or repository
+ git push ---------------------- from your workspace to central repository
+ git pull ------------------------ from central repository or workspace to local repository,
+                                                and also to update your workspace with latest commit
+  .gitignore ------------------- should create a file if we want to ignore files
+  git branch ------------------ creates a branch
+  git checkout <branch name> --------------- moves to a branch
+  git merge <source> <destination> -------- for merging
+  git merge c1889u9fd -------------------------- specifically select the merge
+  git stash ------------------------------------------ undo the files which have been edited
+  git stash list ------------------------------------- backup list 
+  git stash apply stash@{0}     --------------------- the undo is redo (the changes are obtained back)
+  git stash clear --------------------------------------- deleting all the stash
+  git status pop ---------------------------------------- reapply the changes and removes a stash
+  git reset -- soft -------------------------------------- changes only repo
+  git -- mixed    ----------------------------------------- changes in repo and staging
+  git -- hard ---------------------------------------------- changes in all repo, staging, working dir
+  git revert <commit id> ------------------------------ undo's back but will have still the commit id remained in the log, u cannot delete the commit id
+  git checkout <commit id> --------------------------- it would traverse from one commit id to other
+  git rm ------------------------------------------------------ it deletes the file and also goes to staging and can be commited
+  git clean -n ------------------------------------------------ it asks whether the clear the untracked files
+  git clean -f ------------------------------------------------- force cleans the files in the untracked area
+  git tag -a "Rel1.0.0" -m "Release tag for V 1.0.0" dbe3d8f ----------------------- creates a tag for the commit id
+  git tag ------- shows the tags
+  git show <tag name> --------- shows the tag with author description and everything
+  git push --tags ------------------ your can share from your local repo to other
+  git tag -d ------------------------- delete a tag
+ 
+
+  OUESTIONS
+  
+  17) What is ‘head’ in git and how many heads can be created in a repository?
+          A ‘head’ is simply a reference to a commit object. In every repository, there is a default head
+          referred as “Master”.  A repository can contain any number of heads.
+
+  21)   What is a ‘conflict’ in git?
+           A ‘conflict’ arises when the commit that has to be merged has some change in one place, and the
+           current commit also has a change at the same place. Git will not be able to predict which change
+           should take precedence.
+
+26)   What is the difference between ‘git remote’ and ‘git clone’?
+          ‘git remote add’  just creates an entry in your git config that specifies a name for a particular
+           URL.  While, ‘git clone’ creates a new git repository by copying and existing one located at the URI.
+
+43)   How can you fix a broken commit?
+          To fix any broken commit, you will use the command “git commit—amend”. By running this
+           command, you can fix the broken commit message in the editor.
+
